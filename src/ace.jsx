@@ -59,6 +59,14 @@ module.exports = React.createClass({
     if (this.props.onLoad) {
       this.props.onLoad(this.editor);
     }
+
+    //To focus the ace editor
+    this.editor.focus();
+    var session = editor.getSession();
+    //Get the number of lines
+    var count = session.getLength();
+    //Go to end of the last line
+    this.editor.gotoLine(count, session.getLine(count-1).length);
   },
 
   componentWillReceiveProps: function(nextProps) {
