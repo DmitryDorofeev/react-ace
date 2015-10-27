@@ -62,7 +62,7 @@ module.exports = React.createClass({
 
     //To focus the ace editor
     this.editor.focus();
-    var session = editor.getSession();
+    var session = this.editor.getSession();
     //Get the number of lines
     var count = session.getLength();
     //Go to end of the last line
