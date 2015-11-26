@@ -36,7 +36,7 @@
     ]
   },
   "dependencies": {
-    "brace": "^0.5.1",
+    "brace": "git+ssh://git@github.com:DmitryDorofeev/brace.git",
     "browserify": "^9.0.8",
     "jsx-loader": "^0.12.2",
     "lodash": "^2.4.1",
